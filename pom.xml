@@ -4,7 +4,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>demo</name>
@@ -39,7 +39,7 @@
         <url>https://github.com/jiangzhuofan/fanTest-javatraining</url>
         <connection>scm:git:https://github.com/jiangzhuofan/fanTest-javatraining.git</connection>
         <developerConnection>scm:git:https://github.com/jiangzhuofan/fanTest-javatraining.git</developerConnection>
-      <tag>demo-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
 
