@@ -36,6 +36,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <scm>
+        <url>https://github.com/jiangzhuofan/fanTest-javatraining</url>
+        <connection>scm:git:https://github.com/jiangzhuofan/fanTest-javatraining.git</connection>
+        <developerConnection>scm:git:https://github.com/jiangzhuofan/fanTest-javatraining.git</developerConnection>
+    </scm>
+
 
     <build>
         <plugins>
@@ -43,8 +49,28 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.9.5</version>
+                <configuration>
+                    <connectionType>developerConnection</connectionType>
+                    <username>506371647@qq.com</username>
+                    <password>jzf62727</password>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <username>506371647@qq.com</username>
+                    <password>jzf62727</password>
+                    <tagBase>${project.artifactId}-${project.version}</tagBase>
+                    <goals>-f pom.xml deploy</goals>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
-
-
-</project>
+    </project>

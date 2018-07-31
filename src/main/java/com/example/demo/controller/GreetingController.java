@@ -18,8 +18,10 @@ public class GreetingController {
 
     @RequestMapping(value = "/greetingGet", method = RequestMethod.GET)
     public Greeting greetingGet(@RequestParam(value = "name", defaultValue = "world") String name) {
+        System.out.println(name);
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
+
     }
 
     @RequestMapping(value = "/greetingPost",method = RequestMethod.POST)
