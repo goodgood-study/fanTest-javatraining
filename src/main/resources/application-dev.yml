@@ -1,0 +1,7 @@
+server:
+  port: 8080
+logging:
+  pattern:
+    #file: d:/log/tomcat/sell.log
+    #console: "%d - %msg%n"
+    #logging.file=my.log
